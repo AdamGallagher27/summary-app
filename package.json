@@ -6,15 +6,24 @@
     "start": "expo start --tunnel",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "postinstall": "node_modules/.bin/rn-nodeify --install fs --hack"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   },
   "dependencies": {
+    "child_process": "^1.0.2",
     "dotenv": "^16.0.3",
     "expo": "~48.0.15",
     "expo-camera": "~13.2.1",
     "expo-status-bar": "~1.4.4",
+    "optiic": "^0.0.21",
     "react": "18.2.0",
-    "react-native": "0.71.7"
+    "react-native": "0.71.7",
+    "rn-nodeify": "^10.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
