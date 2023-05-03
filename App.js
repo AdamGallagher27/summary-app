@@ -3,7 +3,15 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import { Camera } from 'expo-camera'
 import React from 'react'
 
+
 export default function App() {
+
+	const API_KEY = process.env.API_KEY
+
+	// load optiic data
+	const Optiic =  require('./optiic')
+	const opt = new Optiic({ apiKey: API_KEY })
+
 
 	// get permission to access camera api
 	// change the state of the camera to show it
@@ -31,6 +39,7 @@ export default function App() {
 
 		// photo.uri is the jpg link
 		console.log(photo.uri)
+
 	}
 
 	return (
