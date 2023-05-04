@@ -23,6 +23,7 @@
     "optiic": "^0.0.21",
     "react": "18.2.0",
     "react-native": "0.71.7",
+    "react-native-dotenv": "^3.4.8",
     "rn-nodeify": "^10.3.0"
   },
   "devDependencies": {

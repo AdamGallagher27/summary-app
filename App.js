@@ -6,12 +6,6 @@ import React from 'react'
 
 export default function App() {
 
-	const API_KEY = process.env.API_KEY
-
-	// load optiic data
-	const Optiic =  require('./optiic')
-	const opt = new Optiic({ apiKey: API_KEY })
-
 
 	// get permission to access camera api
 	// change the state of the camera to show it
@@ -29,6 +23,7 @@ export default function App() {
 		}
 	}
 
+
 	// function to take picture
 	const takePicture = async () => {
 		// check that we have access to the camera comp
@@ -39,6 +34,7 @@ export default function App() {
 
 		// photo.uri is the jpg link
 		console.log(photo.uri)
+
 
 	}
 
